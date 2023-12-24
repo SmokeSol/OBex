@@ -46,7 +46,7 @@ const SolanaContext = createContext<SolanaContextType | null>(null);
 
 export const CLUSTER_LOCAL_STORAGE_KEY = "cluster-serum-explorer";
 
-export const LOCALNET_URL = "http://localhost:8899/";
+export const LOCALNET_URL = "https://indulgent-small-fire.solana-mainnet.quiknode.pro/2e977a22f697e8de0267afb61af82a1e145cd05f";
 
 export const CLUSTERS: SolanaCluster[] = [
   {
