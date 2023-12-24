@@ -52,7 +52,8 @@ export const CLUSTERS: SolanaCluster[] = [
   {
     label: "Mainnet Beta",
     network: "mainnet-beta",
-    endpoint: "https://api.mainnet-beta.solana.com",
+    endpoint:
+      process.env.NEXT_PUBLIC_MAINNET_URL || clusterApiUrl("mainnet-beta"),
   },
   {
     label: "Testnet",
