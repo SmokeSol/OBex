@@ -47,13 +47,14 @@ const SolanaContext = createContext<SolanaContextType | null>(null);
 export const CLUSTER_LOCAL_STORAGE_KEY = "cluster-serum-explorer";
 
 export const LOCALNET_URL = "https://indulgent-small-fire.solana-mainnet.quiknode.pro/2e977a22f697e8de0267afb61af82a1e145cd05f";
+export const MAINNET_URL = "https://indulgent-small-fire.solana-mainnet.quiknode.pro/2e977a22f697e8de0267afb61af82a1e145cd05f";
+
 
 export const CLUSTERS: SolanaCluster[] = [
   {
     label: "Mainnet Beta",
     network: "mainnet-beta",
-    endpoint:
-      process.env.NEXT_PUBLIC_MAINNET_URL || clusterApiUrl("mainnet-beta"),
+    endpoint: MAINNET_URL,
   },
   {
     label: "Testnet",
